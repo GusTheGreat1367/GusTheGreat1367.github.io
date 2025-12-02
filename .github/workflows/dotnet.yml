@@ -27,4 +27,5 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Build with MSBuild
-      run: msbuild /GusTheGreat1367
+      run: msbuild /GusTheGreat1367.slnx
+
