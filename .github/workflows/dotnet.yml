@@ -23,11 +23,11 @@ jobs:
     - name: Clear Cache
       run: dotnet clean 
     - name: Restore dependencies
-      run: dotnet restore ./GusTheGreat1367
+      run: dotnet restore GusTheGreat1367
     - name: Build
-      run: dotnet build ./GusTheGreat1367 --no-restore
+      run: dotnet build GusTheGreat1367 --configuration Release
     - name: Test
-      run: dotnet test ./GusTheGreat1367 --no-build --verbosity normal
+      run: dotnet test GusTheGreat1367 --no-build --verbosity normal
     - name: Build with MSBuild
       run: msbuild ./GusTheGreat1367
 
