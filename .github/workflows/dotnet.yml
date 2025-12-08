@@ -21,11 +21,11 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ./GusTheGreat1367.slnx
+      run: dotnet restore ./GusTheGreat1367.csproj
     - name: Build
-      run: dotnet build ./GusTheGreat1367.slnx --no-restore
+      run: dotnet build ./GusTheGreat1367.csproj --no-restore
     - name: Test
-      run: dotnet test ./GusTheGreat1367.slnx --no-build --verbosity normal
+      run: dotnet test ./GusTheGreat1367.csproj --no-build --verbosity normal
     - name: Build with MSBuild
-      run: msbuild ./GusTheGreat1367.slnx
+      run: msbuild ./GusTheGreat1367.csproj
 
