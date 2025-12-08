@@ -23,7 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./GusTheGreat1367/GusTheGreat1367.csproj
     - name: Build
-      run: dotnet build ./GusTheGreat1367/GusTheGreat1367.csproj --no-restore
+      run: dotnet build ./GusTheGreat1367 --configuration Release
     - name: Test
       run: dotnet test ./GusTheGreat1367/GusTheGreat1367.csproj --no-build --verbosity normal
     - name: Build with MSBuild
