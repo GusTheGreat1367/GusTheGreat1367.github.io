@@ -20,12 +20,14 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
+    - name: Clear Cache
+      run: dotnet clean 
     - name: Restore dependencies
-      run: dotnet restore ./GusTheGreat1367/GusTheGreat1367.csproj
+      run: dotnet restore ./GusTheGreat1367
     - name: Build
-      run: dotnet build ./GusTheGreat1367 --configuration Release
+      run: dotnet build ./GusTheGreat1367--no-restore
     - name: Test
-      run: dotnet test ./GusTheGreat1367/GusTheGreat1367.csproj --no-build --verbosity normal
+      run: dotnet test ./GusTheGreat1367 --no-build --verbosity normal
     - name: Build with MSBuild
-      run: msbuild ./GusTheGreat1367/GusTheGreat1367.csproj
+      run: msbuild ./GusTheGreat1367
 
