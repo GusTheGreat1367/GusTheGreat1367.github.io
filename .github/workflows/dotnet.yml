@@ -23,6 +23,7 @@ jobs:
     - name: Clean and Publish
       run: |
         dotnet clean --configuration Release
+        dotnet publish --configuration Release --output ./publish
     - name: Build
-      run: dotnet build --configuration Release --output ./publish
+      run: dotnet build GusTheGreat1367/publish
 
