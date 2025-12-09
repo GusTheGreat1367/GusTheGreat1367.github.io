@@ -25,5 +25,5 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore GusTheGreat1367
     - name: Build with MSBuild
-      run: msbuild GusTheGreat1367 
+      run: msbuild GusTheGreat1367.csproj
 
