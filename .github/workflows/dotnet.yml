@@ -20,9 +20,10 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
-    - name: Clear Cache
-      run: dotnet clean  
-    - name: Restore dependencies
-      run: dotnet restore GusTheGreat1367
-    - name: Build
-      run: dotnet publish GusTheGreat1367
+    - name: Clean and Publish
+      run: |
+        dotnet clean --configuration Release
+        dotnet publish --configuration Release --output ./publish
+    - name: Deploy
+        dotnet publish -c Release -o ./publish
+
