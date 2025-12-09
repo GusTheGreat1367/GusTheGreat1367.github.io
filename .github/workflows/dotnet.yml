@@ -24,6 +24,6 @@ jobs:
       run: dotnet clean -c Release 
     - name: Restore dependencies
       run: dotnet restore GusTheGreat1367
-    - name: Build with MSBuild
-      run: msbuild GusTheGreat1367.csproj
+    - name: Build
+      run: dotnet build GusTheGreat1367 -c Release
 
