@@ -24,6 +24,6 @@ jobs:
       run: |
         dotnet clean --configuration Release
         dotnet publish --configuration Release --output ./publish
-    - name: Deploy
+    - name: Publish the file
         dotnet publish -c Release -o ./publish
 
