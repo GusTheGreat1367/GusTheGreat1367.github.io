@@ -26,4 +26,6 @@ jobs:
         dotnet publish --configuration Release 
     - name: Build
       run: dotnet build -c Release 
+    - name: Publish
+      run: dotnet publish
 
