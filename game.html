@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Game in Reactjs</title>
+    </head>
+    <body>
+        <h1>Game</h1>
+        <script>
+            import { usestate } from 'react';
+            
+            function cards(){
+                var values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+                var suits = ["Spades", "Clubs", "Hearts", "Diamonds"]; //might not need
+                var x;
+                var y;
+                x = 100;
+                y = 50
+                var card = rect(x, y, 50, 100);
+                var deck = [];
+                var Cvalues = values; //clubs
+                var Svalues = value; //spades
+                var Hvalues = value; //hearts
+                var Dvalues = value; //diamonds
+
+                for (var i = 0; i < 14; i++){
+                    deck.push(Cvalues[i] + " of Clubs");
+                    deck.push(Svalues[i] + " of Spades");
+                    deck.push(Hvalues[i] + " of Hearts");
+                    deck.push(Dvalues[i] + " of Diamonds");
+                    
+                }
+               
+            }
+            export default function React(){
+                return (
+                    <div class="poker">
+                       
+                    </div>
+                );
+            }
+        </script>
+    </body>
+</html>
