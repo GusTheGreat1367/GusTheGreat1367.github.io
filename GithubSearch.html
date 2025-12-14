@@ -14,7 +14,7 @@
     function submit(search){
         if(!(search === ("" || " "))) {
             var tab = 'api.github.com/search/users?q=' + string(search); 
-            window.location.href = tab; //doesn't work on a file because it tries to acces the website on the file, not on WWW.
+          //set an new <a class="something></a> in html to tab then pakage the updated <a> in a button 
         }
         else {
             alert("Field cannot be whitespace or null!");
@@ -24,7 +24,6 @@
   function RepoSub(search){
     if(!(search === ("" || " "))) {
       var tab = 'https://api.github.com/search/repositories?q=' + string(search);
-      window.location.href = tab;
     }
   }
 </script>
