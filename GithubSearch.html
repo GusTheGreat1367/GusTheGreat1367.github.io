@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Github user search web application</title>
+</head>
+<body>
+  <input type="search", placeholder="Search a Github user...", id="GHsearch">
+  <button onclick="submit()">Search</button>
+</body>
+<script>
+    var search = document.getElementById("GHsearch");
+    function submit(search){
+        if(!(search === ("" || " "))) {
+            var tab = 'api.github.com/search/users?q=' + string(search);
+            window.location.href = tab; //doesn't work on a file because it tries to acces the website on the file, not on WWW.
+        }
+        else {
+            alert("Field cannot be whitespace or null!");
+        }
+    }
+    sumbit(search);
+</script>
+
+</html>
