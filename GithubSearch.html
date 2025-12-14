@@ -20,7 +20,7 @@
             alert("Field cannot be whitespace or null!");
         }
     }
-  //for both: display results on page
+  //for both: display results on page, doesn't switch tabs, meaning  DOESN'T WORK
   function RepoSub(search){
     if(!(search === ("" || " "))) {
       var tab = 'https://api.github.com/search/repositories?q=' + string(search);
