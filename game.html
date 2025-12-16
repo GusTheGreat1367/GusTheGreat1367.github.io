@@ -8,45 +8,6 @@
     <body>
         <h1>Game</h1>
         <p class="cardP"></p>
-        <script>
-            import { usestate } from 'react';
-            var ex = document.getElememtById("cardP");
-            function cards(){
-                var values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
-                var suits = ["Spades", "Clubs", "Hearts", "Diamonds"]; //might not need
-                var x;
-                var y;
-                x = 100;
-                y = 50
-                var card = rect(x, y, 50, 100);
-                var deck = [];
-                var Cvalues = values; //clubs
-                var Svalues = value; //spades
-                var Hvalues = value; //hearts
-                var Dvalues = value; //diamonds
-
-                for (var i = 0; i < 14; i++){
-                    deck.push(Cvalues[i] + " of Clubs");
-                    deck.push(Svalues[i] + " of Spades");
-                    deck.push(Hvalues[i] + " of Hearts");
-                    deck.push(Dvalues[i] + " of Diamonds");
-                    
-                }
-                for(var j = 0; j < 2; j++){
-                    const randomIndex = Math.floor(Math.random() * deck.length);
-                    const randomValue = myArray[randomIndex];
-                    ex = randomValue;
-                }
-                ex = randomValue;
-               
-            }
-            export default function React(){
-                return (
-                    <div class="poker">
-                       
-                    </div>
-                );
-            }
-        </script>
+        <script src="game.js"></script>
     </body>
 </html>
