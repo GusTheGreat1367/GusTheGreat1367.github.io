@@ -39,14 +39,23 @@
         About me
       </button>
     </a>
-  </div>
-  <div class="App">
+  </div> 
+  <div class="App"> <!-- NOT WORKING -->
     <a href="https://gusthegreat1367.github.io/C#Apps.html" target="_blank">
       <button>
         C# console app
-      </button> 
+      </button>
     </a>
   </div>
+
+  <div class="Repos"> <!-- add all my repos to this -->
+    <a href="https://gusthegreat1367.github.io/repos.html" target="_blank">
+      <button>
+        My repos
+      </button>
+    </a>
+  </div>
+
 
 
 
@@ -82,15 +91,22 @@
   .about {
     position: fixed;
     top: 5px;
-    left: 260px; 
+    left: 255px;
   }
+
   .App {
     position: fixed;
     top: 5px;
-    left: 335px;
+    left: 330px;
   }
+  .Repos {
+    position: fixed;
+    top: 5px;
+    left: 440px;
+  }
+
   .App:hover {
-    ransform: translate(0px, -5px);
+    transform: translate(0px, -5px);
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(128, 128, 128, 2.5);
   }
@@ -108,6 +124,11 @@
   }
 
   .Game:hover {
+    transform: translate(0px, -5px);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(128, 128, 128, 2.5);
+  }
+  .Repos:hover {
     transform: translate(0px, -5px);
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(128, 128, 128, 2.5);
