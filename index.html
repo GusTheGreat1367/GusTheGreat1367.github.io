@@ -2,74 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Gus Pearson</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
+	<meta charset="UTF-8">
+	<title>Gus Pearson</title>
+	<link rel="icon" type="image/png" href="favicon.png" />
 </head>
 
 <body>
-  <div class="home">
-    <h1>Welcome to my subdomain!</h1>
-    <p>I am Gus Pearson, a developer in my group MeepGames, you can visit us at <a
-        href="https://meepgames.github.io" target="_blank">meepgames.github.io</a>. I am an aspiring ASP.NET/C#
-      backend developer. You can find me at <a href="https://github.com/gusthegreat1367" target="_blank">My
-        github</a>. I am in the Google and Github developer programs, you can find me at <a
-        href="https://g.dev/guspearson78" target="_blank">my Google Dev page</a>. Feel free to explore my
-      website and check out my projects! (Also my site doesn't look that good because I am not a frontend dev).
-
-      contact me @ guspearson78@gmail.com
-    </p>
-  </div>
-  <div class="about">
-    <a href="https://gusthegreat1367.github.io/AboutMe.html" target="_blank">
-      <button>
+	<div class="home">
+		<h1>Welcome to my subdomain!</h1> <a href="mailto:Guspearson78@gmail.com" class="contact-button">
+          Message me
+        </a>
+		<p>I am Gus Pearson, a developer in my group MeepGames, you can visit us at <a
+				href="https://meepgames.github.io" target="_blank">meepgames.github.io</a>. I am an aspiring ASP.NET/C#
+			backend developer. You can find me at <a href="https://github.com/gusthegreat1367" target="_blank">My
+				github</a>. I am in the Google and Github developer programs, you can find me at <a
+				href="https://g.dev/guspearson78" target="_blank">my Google Dev page</a>. Feel free to explore my
+			website and check out my projects! (Also my site doesn't look that good because I am not a frontend dev).
+		</p>
+	</div>
+	<div class="about">
+		<a href="https://gusthegreat1367.github.io/AboutMe.html" target="_blank">
+			<button>
         About me
       </button>
-    </a>
+		</a>
 
-    <div class="Repos">
-      <!-- add all my repos to this -->
-      <a href="https://gusthegreat1367.github.io/repos.html" target="_blank">
-        <button>
+		<div class="Repos">
+			<!-- add all my repos to this -->
+			<a href="https://gusthegreat1367.github.io/repos.html" target="_blank">
+				<button>
         My repos
       </button>
-      </a>
-    </div>
+			</a>
+		</div>
 
 </body>
 <style>
-  head {
-    font-family: "Times New Roman", "Commit Mono";
-    font-size: 12;
-    font-color: #000000;
-  }
+	head {
+		font-family: "Times New Roman", "Commit Mono";
+		font-size: 12;
+		font-color: #000000;
+	}
 
-  body {
-    background-color: azure;
+	body {
+		background-color: azure;
 
-  }
+	}
 
-  .home {
-    position: absolute;
-  }
+	.home {
+		position: absolute;
+	}
 
-  .Repos {
+	.Repos {
+		position: fixed;
+		top: 5px;
+		left: 0px;
+	}
+
+	.about {
+		position: fixed;
+		top: 5px;
+		left: 75px;
+	}
+
+	.Repos:hover {
+		transform: translate(0px, -5px);
+		border-radius: 15px;
+		box-shadow: 0 4px 12px rgba(128, 128, 128, 2.5);
+	}
+  .contact {
     position: fixed;
     top: 5px;
-    left: 0px;
+    left: 600px;
   }
-  
-  .about {
-    position: fixed;
-    top: 5px;
-    left: 75px;
-  }
-.Repos:hover{
-  transform: translate(0px, -5px);
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(128, 128, 128, 2.5);
-}
-
 </style>
 <!-- for the buttons/divs, outline/make a utility bar for them -->
 
