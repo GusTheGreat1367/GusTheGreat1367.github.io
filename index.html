@@ -10,8 +10,8 @@
 <body>
 	<div class="home">
 		<h1>Welcome to my subdomain!</h1> <a href="mailto:Guspearson78@gmail.com" class="contact-button">
-          Message me
-        </a>
+			Message me
+		</a>
 		<p>I am Gus Pearson, a developer in my group MeepGames, you can visit us at <a
 				href="https://meepgames.github.io" target="_blank">meepgames.github.io</a>. I am an aspiring ASP.NET/C#
 			backend developer. You can find me at <a href="https://github.com/gusthegreat1367" target="_blank">My
@@ -34,6 +34,17 @@
       </button>
 			</a>
 		</div>
+		<div class="ai">
+			<a href="gusthegreat1367.github.io/ai.html"></a>
+			<button onclick="Woah()">
+				My AI
+			</button>
+		</div>
+		<script>
+			function Woah(){
+				alert("Woah there buddy; the AI isn't realesed yet. Check the repos page for more info.");
+			}
+		</script>
 
 </body>
 <style>
@@ -69,10 +80,21 @@
 		border-radius: 15px;
 		box-shadow: 0 4px 12px rgba(128, 128, 128, 2.5);
 	}
-  .contact {
-    position: fixed;
+
+	.contact {
+		position: fixed;
+		top: 5px;
+		left: 600px;
+	}
+  .ai {
+    position: fixed; 
     top: 5px;
-    left: 600px;
+    left: 152px;
+  }
+  .ai:hover {
+	  transform: translate(0px, -5px);
+	  border-radius: 15px;
+	  box-shadow: 0 4px 12px rgba(128, 128, 128, 2.5);
   }
 </style>
 <!-- for the buttons/divs, outline/make a utility bar for them -->
